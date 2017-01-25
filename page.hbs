@@ -1,0 +1,28 @@
+{{!< default}}
+
+{{#post}}
+
+<header class="main-header">
+    {{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{else}}
+    <p class="page-title"><a href="{{@blog.url}}" class="page-title-link">{{@blog.title}}</a>{{/if}}</p>
+    <p class="page-description">{{@blog.description}}</p>
+    <hr>
+</header>
+
+<main class="content" role="main">
+
+    <article class="{{post_class}}">
+
+        <header class="post-header">
+            <p class="post-title">{{title}}</p>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+    </article>
+
+</main>
+
+{{/post}}
