@@ -3,7 +3,7 @@
 <header class="main-header">
     {{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{else}}
     <p class="page-title"><a href="{{@blog.url}}" class="page-title-link">{{@blog.title}}</a>{{/if}}</p>
-    <p class="page-description">{{@blog.description}}</p>
+    <p class="page-description"><a href="{{@blog.url}}/about" class="list-title-link">{{@blog.description}}</a></p>
     <hr>
 </header>
 
